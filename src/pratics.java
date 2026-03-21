@@ -5,6 +5,6 @@ import java.util.stream.IntStream;
 
 public class pratics {
     public static void main(String[] args) {
-        System.out.println("Raja");
+        System.out.println("this is raja reddy");
     }
 }
