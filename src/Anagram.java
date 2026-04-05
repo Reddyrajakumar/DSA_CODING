@@ -2,21 +2,14 @@ import java.util.Arrays;
 
 public class Anagram {
     public static void main(String[] args) {
-        String a="ascde".toLowerCase();
-        String b="edasp".toLowerCase();
-//        char[] a1=a.toCharArray();
-//        char[] b1=b.toCharArray();
-//        Arrays.sort(a1);
-//        Arrays.sort(b1);
-//        if(Arrays.equals(a1,b1)){
-//            System.out.println("Anagram");
-//        }else{
-//            System.out.println("not Anagram");
-//        }
-        int c[]=new int[26];
+        String a="listen";
+        String b="silen";
+        System.out.println(Anagram.checkanagram(a,b));
+    }
+    public static String checkanagram(String a,String b){
+        char c[]=new char[25];
         if(a.length()!=b.length()){
-            System.out.println("not anagram");
-            return;
+            return "not an anagram";
         }
         for(int i=0;i<a.length();i++){
             c[a.charAt(i)-'a']++;
@@ -24,8 +17,9 @@ public class Anagram {
         }
         for(int cc:c){
             if(cc!=0){
-                System.out.println("not palindrome");
+                return "not anagram";
             }
         }
+        return "anagram";
     }
 }

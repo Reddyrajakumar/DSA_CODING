@@ -11,5 +11,6 @@ public class Prime_number_code {
             }
         }
         String finalres=result?"this is prime number":"not a prime";
+        System.out.println(finalres);
     }
 }
