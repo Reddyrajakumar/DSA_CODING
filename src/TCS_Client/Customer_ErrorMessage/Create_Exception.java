@@ -5,7 +5,7 @@ public class Create_Exception {
         int a=20;
         try{
             if(a<30){
-                throw new CustomerNotFound("not found",400);
+                throw new CustomerNotFound("not found");
             }
         }catch (CustomerNotFound e){
             System.out.println(e.getErrorDetails());
