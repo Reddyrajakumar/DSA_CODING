@@ -22,8 +22,8 @@ public class sumoftwo_numbers_in_ListNode_Shasi_interview {
         while(first!=null){
             Node second=first.next;
             while(second!=null){
-                if(first.id+second.id==k){
-                    System.out.println(first.id+" "+second.id);
+                if(first.data+second.data==k){
+                    System.out.println(first.data+" "+second.data);
                 }
                 second=second.next;
             }

@@ -22,7 +22,7 @@ public class Linkedlist_Polindromeornot_234 {
         Node firsthalf=head;
         Node Secondhalf=prv;
         while(Secondhalf!=null){
-            if(firsthalf.id!=Secondhalf.id){
+            if(firsthalf.data!=Secondhalf.data){
                 ispalindrome=false;
                 break;
             }

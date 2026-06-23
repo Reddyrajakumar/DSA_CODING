@@ -20,7 +20,7 @@ public class leetcode203 {
     public static  Node removeElements(Node head, int val) {
         Node temp=head;
         while(temp!=null && temp.next!=null){
-            if(temp.next.id==val){
+            if(temp.next.data==val){
                 temp.next=temp.next.next;
             }else{
                 temp=temp.next;
@@ -32,7 +32,7 @@ public class leetcode203 {
     public static void printlist(Node head){
         Node temp=head;
         while(temp!=null){
-            System.out.print(temp.id+"->");
+            System.out.print(temp.data+"->");
             temp=temp.next;
         }
         System.out.println("null");

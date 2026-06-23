@@ -25,7 +25,7 @@ public class Deleting_node_fromending {
         slow.next=slow.next.next;
         Node temp=head;
         while(temp!=null){
-            System.out.print(temp.id+"->");
+            System.out.print(temp.data+"->");
             temp=temp.next;
         }
     }

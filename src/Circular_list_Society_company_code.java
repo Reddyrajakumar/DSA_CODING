@@ -23,12 +23,3 @@ public class Circular_list_Society_company_code {
         return false;
     }
 }
-
-
-class Node{
-    int id;
-    Node next;
-    Node(int id){
-        this.id=id;
-    }
-}

@@ -23,12 +23,12 @@ public class Find_givennumber_inList_withoutend_index {
         Node end=head;
         Node start=head;
         int sum=0;
-        while(end.id<targer){
+        while(end.data<targer){
             sum+=1;
             start=start.next;
             end=end.next.next;
         }
-        while (start.id!=targer){
+        while (start.data!=targer){
             sum+=1;
             start=start.next;
         }
